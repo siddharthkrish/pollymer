@@ -1,5 +1,7 @@
 const commandRoutes = require('./command_routes');
+const homeRoutes = require('./home');
 
 module.exports = function (app, db) {
-  commandRoutes(app, db); // Other route groups could go here, in the future};
+  commandRoutes(app, db);
+  homeRoutes(app, db);
 }
