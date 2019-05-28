@@ -1,5 +1,6 @@
 module.exports = function (app, db) {
-  app.post('/pollymer', (req, res) => { // You'll create your note here.    
-    res.send('creating new poll: ' + req.body)
+  app.post('/command', (req, res) => { // You'll create your note here.
+    console.log( req.body )
+    res.send('new command: ' + req.body.opt)
   });
 };
